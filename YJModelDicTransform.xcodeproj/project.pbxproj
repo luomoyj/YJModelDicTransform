@@ -13,6 +13,8 @@
 		2FC7297B1E02962F0057B5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC729791E02962F0057B5A1 /* Main.storyboard */; };
 		2FC7297D1E02962F0057B5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC7297C1E02962F0057B5A1 /* Assets.xcassets */; };
 		2FC729801E02962F0057B5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC7297E1E02962F0057B5A1 /* LaunchScreen.storyboard */; };
+		2FC729891E0296670057B5A1 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC729881E0296670057B5A1 /* TestModel.m */; };
+		2FC7298C1E0297A40057B5A1 /* NSObject+YJModelDicTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7298B1E0297A40057B5A1 /* NSObject+YJModelDicTransform.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		2FC7297C1E02962F0057B5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FC7297F1E02962F0057B5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FC729811E02962F0057B5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC729871E0296670057B5A1 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		2FC729881E0296670057B5A1 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		2FC7298A1E0297A40057B5A1 /* NSObject+YJModelDicTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YJModelDicTransform.h"; sourceTree = "<group>"; };
+		2FC7298B1E0297A40057B5A1 /* NSObject+YJModelDicTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YJModelDicTransform.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				2FC729761E02962F0057B5A1 /* ViewController.h */,
 				2FC729771E02962F0057B5A1 /* ViewController.m */,
 				2FC729791E02962F0057B5A1 /* Main.storyboard */,
+				2FC729871E0296670057B5A1 /* TestModel.h */,
+				2FC729881E0296670057B5A1 /* TestModel.m */,
+				2FC7298A1E0297A40057B5A1 /* NSObject+YJModelDicTransform.h */,
+				2FC7298B1E0297A40057B5A1 /* NSObject+YJModelDicTransform.m */,
 				2FC7297C1E02962F0057B5A1 /* Assets.xcassets */,
 				2FC7297E1E02962F0057B5A1 /* LaunchScreen.storyboard */,
 				2FC729811E02962F0057B5A1 /* Info.plist */,
@@ -152,6 +162,8 @@
 				2FC729781E02962F0057B5A1 /* ViewController.m in Sources */,
 				2FC729751E02962F0057B5A1 /* AppDelegate.m in Sources */,
 				2FC729721E02962F0057B5A1 /* main.m in Sources */,
+				2FC7298C1E0297A40057B5A1 /* NSObject+YJModelDicTransform.m in Sources */,
+				2FC729891E0296670057B5A1 /* TestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
