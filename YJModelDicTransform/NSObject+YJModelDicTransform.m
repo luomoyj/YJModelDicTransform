@@ -40,7 +40,7 @@ NSString *const YJClassType_other   =   @"其它";
         if (!newPropertyName) {
             newPropertyName = propertyName;
         }
-
+        
         NSLog(@"属性名:%@", propertyName);
         
         id propertyValue = dic[newPropertyName];
@@ -72,7 +72,7 @@ NSString *const YJClassType_other   =   @"其它";
             }
             else if ([propertyClassType isEqualToString:@"NSDictionary"] || [propertyClassType isEqualToString:@"NSMutableDictionary"]) {
                 //字典类型   不考虑，一般不会用字典，用自定义model
-
+                
             }
             else if ([propertyClassType isEqualToString:@"NSString"]) {
                 //字符串类型
@@ -89,18 +89,11 @@ NSString *const YJClassType_other   =   @"其它";
             }
         }
         else if ([propertyType isEqualToString:YJClassType_basic]) {
-            //基本数据类型
-            if ([propertyClassType isEqualToString:@"c"]) {
-                //bool类型
-                NSString *lowerValue = [propertyValue lowercaseString];
-                if ([lowerValue isEqualToString:@"yes"] || [lowerValue isEqualToString:@"true"]) {
-                    propertyValue = @(YES);
-                } else if ([lowerValue isEqualToString:@"no"] || [lowerValue isEqualToString:@"false"]) {
-                    propertyValue = @(NO);
-                }
+            if ([propertyValue isKindOfClass:[NSString class]]) {
+                propertyValue = [[[NSNumberFormatter alloc] init] numberFromString:propertyValue];
             }
             else {
-                propertyValue = [[[NSNumberFormatter alloc] init] numberFromString:propertyValue];
+                
             }
             
             if (propertyValue != nil) {
@@ -108,7 +101,7 @@ NSString *const YJClassType_other   =   @"其它";
             }
         }
         else {
-            //其他类型
+            
         }
     }
     
@@ -160,7 +153,7 @@ NSString *const YJClassType_other   =   @"其它";
         [dicPropertyType setObject:@"CGFloat" forKey:@"classType"];
         [dicPropertyType setObject:YJClassType_basic forKey:@"type"];
     }
-    else if ([propertyType isEqualToString:@"c"]) {
+    else if ([propertyType isEqualToString:@"B"]) {
         [dicPropertyType setObject:@"BOOL" forKey:@"classType"];
         [dicPropertyType setObject:YJClassType_basic forKey:@"type"];
     }
